@@ -1,0 +1,131 @@
+/* fontes importadas Google Fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* botões no geral e configurações de ícones da navbar e geral*/
+
+.btn{
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	color: #BD1D1D;
+}
+
+.btn:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.btn:hover{
+	color: #d6d6d6;
+}
+
+.btn-card{
+	font-size: 1rem;
+	font-family: Roboto;
+	font-weight: 400;
+	color: #FFFFFF;
+	padding: 0.5rem 2rem 0.5rem 2rem;
+	border: none;
+	background-color: #FF5E5E;
+}
+
+.inline-icon{
+	margin-right: 0.5rem;
+}
+
+/* offCanvas -- Sidebar */
+
+.offcanvas-body {
+	color: #BD1D1D;
+}
+
+.offcanvas-body li{
+	color: #BD1D1D;
+	font-size: 1.2rem;
+	margin-top: 1.3vw;
+}
+
+.menu-itens{
+	font-size: 1.2rem !important;
+}
+
+.offcanvas-body a{
+	color: #BD1D1D;
+	text-decoration: none;
+	font-size: 2.4rem;
+	margin-top: 2.4vh;
+}
+
+
+.offcanvas-body a:hover{
+	transition: 0.6s;
+	color: #d6d6d6;
+}
+
+
+.offcanvas-body .row {
+	margin-left: 1vw;
+	margin-top: 52vh;
+}
+
+
+ul{
+	list-style-type: none;
+}
+
+/* Configurações do Carrossel */
+
+.carousel-inner img {
+	margin: auto;
+}
+
+p {
+	font-family: Roboto;
+	font-weight: 900;
+}
+
+/* Configuração dos carros de estoque */
+
+#estoque_container{
+	position: relative;
+	margin-top: -2rem;
+	border-radius: 40px;
+	background-color: #F8F8F8;
+	box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.25);
+}
+
+#filtro_container{
+	z-index: 1;
+	width: 72vw;
+	position: relative;
+	border-radius: 40px;
+	background-color: #f8f8f8;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+	margin-bottom: 1.2rem;
+}
+
+#filtro_container select {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background-color: #EEEEEE;
+	font-family: Roboto;
+	font-weight: 300;
+	border-radius: 35px;
+}
+
+.card {
+	background-color: #F9F9F9;
+	border: none;
+	border-radius: 11px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-item a{
+	color: #BD1D1D;
+	margin-bottom: 2rem;
+	border: 0px ,0px ,0px ,1px;
+}
