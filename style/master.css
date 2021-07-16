@@ -3,12 +3,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+/* Configurações do menu */
+
+body {
+	margin-top: 5%;
+}
+
+.nav img {
+	filter: drop-shadow(0px 4px 12px rgba(189, 29, 29, 0.25));
+}
+
+/* whatsapp Button Float */
+
 
 /* botões no geral e configurações de ícones da navbar e geral*/
 
 .btn{
 	font-family: Roboto;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 500;
 	color: #BD1D1D;
 }
@@ -22,6 +34,7 @@
 	color: #d6d6d6;
 }
 
+
 .btn-card{
 	font-size: 1rem;
 	font-family: Roboto;
@@ -30,6 +43,12 @@
 	padding: 0.5rem 2rem 0.5rem 2rem;
 	border: none;
 	background-color: #FF5E5E;
+}
+
+.btn-card:hover{		
+	transition: 0.6s;
+	color: #FF5E5E;
+	background-color: #FFFFFF;
 }
 
 .inline-icon{
@@ -128,4 +147,45 @@ p {
 	color: #BD1D1D;
 	margin-bottom: 2rem;
 	border: 0px ,0px ,0px ,1px;
+}
+
+
+/* footer */
+
+.paragraph-footer{
+	margin: 0;
+	font-weight: 500;
+	font-family: Roboto;
+	font-size: 0.875rem;
+	color: #8C8C8C;
+}
+
+.quadradofofinho{
+	margin-right: 0.1%;
+	display: inline-block;
+	height: 0.9rem;
+	width: 5px;
+	background-color: #DF0000;
+}
+
+.title-footer{
+	margin: 0;
+	line-height: 5vw;
+	font-size: 1rem;
+}
+
+.col-lg-2 img {
+	filter: drop-shadow(0px 4px 12px rgba(189,29,29,0.25));
+}
+
+.col-lg-2{
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+footer a{
+	display: inline-block;
+	margin-left: 0.2rem;
+	color: #000000;
+	font-size: 1.2rem;
 }

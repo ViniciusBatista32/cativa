@@ -3,22 +3,22 @@ require_once("scripts/header.php");
 ?>
 
 
-
-
 <body>
+
+<link rel="stylesheet" href="style/master.css">
 
 	<!-- Carrossel -->
 
 	<div id="carrosselprincipal" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner shadow-sm">
 			<div class="carousel-item active">
-				<img src="images/carrossel1.jpg" class="d-block h-auto w-100 mx-auto" alt="primeira-imagem">
+				<img src="images/carrossel-images/Financiamento.png" class="d-block h-auto w-100 mx-auto" alt="primeira-imagem">
 			</div>
 			<div class="carousel-item">
-				<img src="images/Logo-cativa.png" class="d-block h-auto w-100 mx-auto" alt="segunda-imagem">
+				<img src="images/carrossel-images/Garantia.png" class="d-block h-auto w-100 mx-auto" alt="segunda-imagem">
 			</div>
 			<div class="carousel-item">
-				<img src="images/Logo-cativa.png" class="d-block h-auto w-100 mx-auto" alt="terceira-imagem">
+				<img src="images/carrossel-images/Marketing.png" class="d-block h-auto w-100 mx-auto" alt="terceira-imagem">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carrosselprincipal" data-bs-slide="prev">
@@ -31,17 +31,24 @@ require_once("scripts/header.php");
 		</button>
 	</div>
 
-	<p class="fs-1 text-center m-5">DESTAQUES DA SEMANA!</p>
+	<!-- Whatsapp Button -->
+
+
+		<i class="fab fa-whatsapp"></i>
+
+
+	<p class="fs-1 text-center m-5 destaque">DESTAQUES DA SEMANA!</p>
+
 
 	<!-- Cards -->
 
-	<div class="row p-3" id="destaquesdasemana">
+	<div class="row w-100" id="destaquesdasemana">
 		<div class="col-md-4">
 			<div class="card shadow-sm p-3 m-3">
 				<div class="card-body">
 					<h5 class="card-title">{}</h5>
 					<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+				<div class="table-responsive">
 					<table class="table">
 						<tbody>
 							<tr>
@@ -54,6 +61,7 @@ require_once("scripts/header.php");
 							</tr>
 						</tbody>
 					</table>
+				</div>
 					<div class="text-center m-2">
 						<button class="btn-card rounded-pill">Mais Detalhes</button>
 					</div>
@@ -66,7 +74,7 @@ require_once("scripts/header.php");
 					<h5 class="card-title">{}</h5>
 
 					<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+				<div class="table-responsive">
 					<table class="table">
 						<tbody>
 							<tr>
@@ -79,6 +87,7 @@ require_once("scripts/header.php");
 							</tr>
 						</tbody>
 					</table>
+				</div>
 					<div class="text-center m-2">
 						<button class="btn-card rounded-pill">Mais Detalhes</button>
 					</div>
@@ -91,7 +100,7 @@ require_once("scripts/header.php");
 					<h5 class="card-title">{}</h5>
 
 					<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+				<div class="table-responsive">
 					<table class="table">
 						<tbody>
 							<tr>
@@ -104,6 +113,7 @@ require_once("scripts/header.php");
 							</tr>
 						</tbody>
 					</table>
+					</div>
 					<div class="text-center m-2">
 						<button class="btn-card rounded-pill">Mais Detalhes</button>
 					</div>
@@ -159,7 +169,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -172,6 +182,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -184,7 +195,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -197,6 +208,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -209,7 +221,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -222,6 +234,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -237,7 +250,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -250,6 +263,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -262,7 +276,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -275,6 +289,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -287,7 +302,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -300,6 +315,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -315,7 +331,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -328,6 +344,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -340,7 +357,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -353,6 +370,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -365,7 +383,7 @@ require_once("scripts/header.php");
 						<h5 class="card-title">{}</h5>
 
 						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-
+					<div class="table-responsive">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -378,6 +396,7 @@ require_once("scripts/header.php");
 								</tr>
 							</tbody>
 						</table>
+					</div>
 						<div class="text-center m-2">
 							<button class="btn-card rounded-pill">Mais Detalhes</button>
 						</div>
@@ -394,7 +413,8 @@ require_once("scripts/header.php");
 
 
 	</div>
-	
-	<?php
-	require_once("scripts/footer.php");
-	?>
+
+
+<?php
+	require_once("scripts/footer.php")
+?>

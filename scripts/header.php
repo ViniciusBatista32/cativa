@@ -24,22 +24,22 @@
 </head>
 
 <body>
-	<nav class="navbar shadow-sm fixed-top bg-light p-0 m-0">
+	<nav class="navbar shadow-sm fixed-top bg-light m-0 p-0 h">
 		<div class="container">
-			<ul class="nav navbar-nav pull-sm-left">
-				<li class="nav-item">
+			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
+				<li class="nav-item p-0 m-0">
 					<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="fas fa-bars inline-icon"></i>Menu</a>
 				</li>
 			</ul>
 
-			<ul class="nav navbar-nav navbar-logo mx-auto">
-				<li class="nav-item">
+			<ul class="nav navbar-nav navbar-brand mx-auto m-0 p-0">
+				<li class="nav-item p-0 m-0">
 					<img src="images/logo-cativa.png" width="100">
 				</li>
 			</ul>
 
 			<ul class="nav navbar-nav pull-sm-right">
-				<li class="nav-item">
+				<li class="nav-item m-0 p-0">
 				<button class="btn" type="button"><i class="far fa-user inline-icon"></i>Admin</a>
 				</li> 
 			</ul>
