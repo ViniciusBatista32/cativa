@@ -21,10 +21,14 @@
 
 	<!-- Master CSS -->
 	<link rel="stylesheet" href="style/master.css">
+
+	<!-- Other CSS-->
+	<link rel="stylesheet" href="style/style-financing.css">
+
 </head>
 
 <body>
-	<nav class="navbar shadow-sm fixed-top bg-light m-0 p-0 h">
+	<nav class="navbar fixed-top m-0 p-0 h">
 		<div class="container">
 			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
 				<li class="nav-item p-0 m-0">
@@ -34,7 +38,7 @@
 
 			<ul class="nav navbar-nav navbar-brand mx-auto m-0 p-0">
 				<li class="nav-item p-0 m-0">
-					<img src="images/logo-cativa.png" width="100">
+					<a href="index.php"><img src="images/logo-cativa.png" width="100"></a>
 				</li>
 			</ul>
 
@@ -62,13 +66,13 @@
 		  <a class="menu-itens" href="estoque"> <i class="fas fa-car inline-icon"></i> Estoque </a></li>
 
 		  <li class="list-group-item">
-		  <a class="menu-itens" href="financiamento"> <i class="fas fa-coins inline-icon"></i> Financiamento </a></li>
+		  <a class="menu-itens" href="financiamento.php"> <i class="fas fa-coins inline-icon"></i> Financiamento </a></li>
 
 		  <li class="list-group-item">
 		  <a class="menu-itens" href="estoque"> <i class="fas fa-phone-alt inline-icon"></i> Contato </a></li>
 	  </ul>
 
-	  <div class="container">
+	  <div class="container-fluid">
  		 <div class="row justify-content-md-center m-6">
     		<div class="col">
 				<a href="https://facebook.com.br/cativaveiculosoficial"><i class="fab fa-facebook"></i></a>

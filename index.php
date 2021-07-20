@@ -33,12 +33,13 @@ require_once("scripts/header.php");
 
 	<!-- Whatsapp Button -->
 
+		<a class="whatsappbutton" href="https://api.whatsapp.com/send?phone=5511983340201"><i class="fab fa-whatsapp"></i></a>
 
-		<i class="fab fa-whatsapp"></i>
+	<!-- Whatsapp Button -->
 
-
-	<p class="fs-1 text-center m-5 destaque">DESTAQUES DA SEMANA!</p>
-
+	<!-- Destaques -->
+	<p class="fs-1 text-center m-5">DESTAQUES DA SEMANA!</p>
+	
 
 	<!-- Cards -->
 
@@ -121,6 +122,7 @@ require_once("scripts/header.php");
 			</div>
 		</div>
 	</div>
+	<!-- Destaques -->
 
 	<!-- Cards dos filtros-->
 
@@ -413,7 +415,7 @@ require_once("scripts/header.php");
 
 
 	</div>
-
+	<!-- Cards dos filtros-->
 
 <?php
 	require_once("scripts/footer.php")

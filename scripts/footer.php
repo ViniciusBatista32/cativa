@@ -1,10 +1,10 @@
-<footer class="bg-light text-lg-start">
+<footer class="text-lg-start w-100">
   <!-- Grid container -->
   <div class="container-fluid w-100">
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
-      <div class="col-lg-2">
+      <div class="col-lg-2 text-center">
         <p>
           <img src="images/logo-cativa.png" class="w-100 mt-5">
         </p>

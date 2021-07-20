@@ -13,8 +13,10 @@ body {
 	filter: drop-shadow(0px 4px 12px rgba(189, 29, 29, 0.25));
 }
 
-/* whatsapp Button Float */
-
+.navbar {
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+}
 
 /* botões no geral e configurações de ícones da navbar e geral*/
 
@@ -23,6 +25,7 @@ body {
 	font-size: 1.25rem;
 	font-weight: 500;
 	color: #BD1D1D;
+	transition: 0.6s;
 }
 
 .btn:focus{
@@ -36,6 +39,7 @@ body {
 
 
 .btn-card{
+	transition: 0.6s;
 	font-size: 1rem;
 	font-family: Roboto;
 	font-weight: 400;
@@ -43,6 +47,7 @@ body {
 	padding: 0.5rem 2rem 0.5rem 2rem;
 	border: none;
 	background-color: #FF5E5E;
+	border-radius: 0.625rem;
 }
 
 .btn-card:hover{		
@@ -72,6 +77,7 @@ body {
 }
 
 .offcanvas-body a{
+	transition: 0.6s;
 	color: #BD1D1D;
 	text-decoration: none;
 	font-size: 2.4rem;
@@ -169,9 +175,15 @@ p {
 }
 
 .title-footer{
+	font-family: Roboto;
 	margin: 0;
 	line-height: 5vw;
 	font-size: 1rem;
+	font-weight: bold;
+}
+
+.col.text-center{
+	font-weight: bold;
 }
 
 .col-lg-2 img {
@@ -179,8 +191,13 @@ p {
 }
 
 .col-lg-2{
-	margin-left: 2rem;
 	margin-right: 2rem;
+}
+
+footer{
+	margin-top: 8rem;
+	box-shadow: 2px -4px 10px rgba(209, 40, 40, 0.25);
+	background-color: #FFFFFF;
 }
 
 footer a{
@@ -188,4 +205,33 @@ footer a{
 	margin-left: 0.2rem;
 	color: #000000;
 	font-size: 1.2rem;
+}
+
+footer a:hover{
+	transition: 0.6s;
+	color: #DF0000;
+}
+
+/* whatsapp button */
+
+.whatsappbutton{
+	transition: 0.6s;
+	text-decoration: none;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 2;
+	display: flex;
+	position: fixed;
+	font-size: 2.5rem;
+	color: #FFFFFF;
+	background-color: #04C617;
+	border: none;
+	border-radius:50%;
+	padding: 0.7rem;
+}
+
+.whatsappbutton:hover{
+	transition: 0.6s;
+	color: #04C617;
+	background-color: #FFFFFF;
 }
