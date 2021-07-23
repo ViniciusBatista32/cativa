@@ -26,7 +26,7 @@
 
 <body>
     <a href="index.php" class="voltar"><i class="fas fa-arrow-circle-left"></i></a>
-    <div class="row p-0 w-100">
+    <div class="row m-0 p-0 w-100 h-100">
         <div class="col-sm-5 marketing p-0">
             <div class="container text-center">
                 <img src="images/logo-cativa.png" class="imagem-marketing-logo img-responsive text-center">

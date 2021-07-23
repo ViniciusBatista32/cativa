@@ -24,11 +24,12 @@
 
 	<!-- Other CSS-->
 	<link rel="stylesheet" href="style/style-financing.css">
+	<link rel="stylesheet" href="style/contato.css">
 
 </head>
 
 <body>
-	<nav class="navbar fixed-top m-0 p-0 h">
+	<nav class="navbar fixed-top m-0 p-0 w-100">
 		<div class="container">
 			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
 				<li class="nav-item p-0 m-0">
@@ -44,7 +45,7 @@
 
 			<ul class="nav navbar-nav pull-sm-right">
 				<li class="nav-item m-0 p-0">
-				<button class="btn" type="button"><i class="far fa-user inline-icon"></i>Admin</a>
+				<a class="btn" href="admin.php"><i class="far fa-user inline-icon"></i>Admin</a>
 				</li> 
 			</ul>
 		</div>
@@ -63,13 +64,13 @@
 
       <ul class="list-group list-group-flush">
 		  <li class="list-group-item">
-		  <a class="menu-itens" href="estoque"> <i class="fas fa-car inline-icon"></i> Estoque </a></li>
+		  <a class="menu-itens" href="estoque.php"> <i class="fas fa-car inline-icon"></i> Estoque </a></li>
 
 		  <li class="list-group-item">
 		  <a class="menu-itens" href="financiamento.php"> <i class="fas fa-coins inline-icon"></i> Financiamento </a></li>
 
 		  <li class="list-group-item">
-		  <a class="menu-itens" href="estoque"> <i class="fas fa-phone-alt inline-icon"></i> Contato </a></li>
+		  <a class="menu-itens" href="contato.php"> <i class="fas fa-phone-alt inline-icon"></i> Contato </a></li>
 	  </ul>
 
 	  <div class="container-fluid">

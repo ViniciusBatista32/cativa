@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+
+/*Estilos dos botões*/
+
 .btn-card{
 	transition: 0.6s;
 	font-size: 1.5rem;
@@ -19,9 +22,13 @@
 	background-color: #FFFFFF;
 }
 
+/*estilo das listas*/
+
 ul{
 	list-style-type: none;
 }
+
+/*estilo do botão de voltar da página admin*/
 
 
 .voltar{
@@ -39,6 +46,8 @@ ul{
     transition: 0.8s;
     color: #FFFFFF;
 }
+
+/*area destinada a imagem e a primeira coluna do site de login administrativo*/
 
 .marketing{
     background-color: rgba(255, 255, 255);
@@ -68,10 +77,12 @@ ul{
 }
 
 .imagem-marketing{
-    height: 390px;
-    width: 600px;
+    height: 53vh;
+    width: 39vw;
 
 }
+
+/*estilização do formulário*/
 
 form h4{
     font-size: 3rem;
@@ -126,3 +137,113 @@ form input{
     
 }
 
+/*estilização da página de ambientação do administrador.*/
+
+body{
+    margin-top: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.admin-side{
+    height: 100%;
+}
+
+.admin-side img{
+    margin-left: 25%;
+}
+
+.admin-side a{
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #BD1D1D;
+}
+
+.logout{
+    transition: 0.8s;
+    position: absolute;
+    left: 2.36%;
+    right: 95.21%;
+    top: 93.33%;
+    bottom: 3.03%;
+    font-size: 2rem;
+    color: #DB4A4A;
+    transform: rotateY(3.142rad);
+}
+
+.logout:hover{
+    transition: 0.8s;
+    color: #FFFFFF;
+}
+
+.perfilfoto{
+    width: 11vw;
+    height: 21vh;
+    border-radius: 50%;
+}
+
+.admin-side .inline-icon{
+    margin-right: 2rem;
+}
+
+.btn-adicionar-carro{
+    padding: 0;
+    transition: 0.8s;
+    border: none;
+    background-color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #BD1D1D;
+}
+
+/*segunda coluna (dos veículos anunciados)*/
+
+.linha-carro-admin img{
+    width: 43px;
+    height: 40px;
+}
+
+.editar{
+    padding: 0;
+    transition: 0.8s;
+    border: none;
+    color: #6BAE6A;
+    width: 30px;
+    height: 36px;
+    font-size: 1.25rem;
+}
+
+.excluir{
+    padding: 0;
+    transition: 0.8s;
+    border: none;
+    color: #DB2121;
+    width: 30px;
+    height: 36px;
+    font-size: 1.25rem;
+}
+
+.container .row{
+    background-color:#EFEFEF ;
+}
+
+.estoque-escrita{
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.page-link{
+    color: #BD1D1D;
+}

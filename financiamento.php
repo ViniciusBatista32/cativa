@@ -47,7 +47,7 @@ require_once("scripts/header.php")
       Não
     </label>
   </div>
-  <div class="form-group">
+  <div class="form-group text-center">
     <button type="submit" class="btn-card mt-4">Enviar</button>
   </div>
 </form>

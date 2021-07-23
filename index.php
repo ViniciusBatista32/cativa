@@ -165,7 +165,7 @@ require_once("scripts/header.php");
 
 	<div id="estoque_container" class="container">
 		<div class="row p-2 d-flex justify-content-center">
-			<div class="col-md-3 m-4">
+			<div class="col-md-4 mt-5">
 				<div class="card bg-light shadow-sm">
 					<div class="card-body">
 						<h5 class="card-title">{}</h5>
@@ -191,7 +191,7 @@ require_once("scripts/header.php");
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 m-4">
+			<div class="col-md-4 mt-5">
 				<div class="card bg-light shadow-sm">
 					<div class="card-body">
 						<h5 class="card-title">{}</h5>
@@ -217,7 +217,7 @@ require_once("scripts/header.php");
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 m-4">
+			<div class="col-md-4 mt-5">
 				<div class="card bg-light shadow-sm">
 					<div class="card-body">
 						<h5 class="card-title">{}</h5>
@@ -246,7 +246,7 @@ require_once("scripts/header.php");
 			</div>
 		</div>
 		<div class="row p-2 d-flex justify-content-center">
-			<div class="col-md-3 m-4">
+			<div class="col-md-4 mt-5">
 				<div class="card bg-light shadow-sm">
 					<div class="card-body">
 						<h5 class="card-title">{}</h5>
@@ -272,7 +272,7 @@ require_once("scripts/header.php");
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 m-4">
+			<div class="col-md-4 mt-5">
 				<div class="card bg-light shadow-sm">
 					<div class="card-body">
 						<h5 class="card-title">{}</h5>
@@ -298,88 +298,7 @@ require_once("scripts/header.php");
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 m-4">
-				<div class="card bg-light shadow-sm">
-					<div class="card-body">
-						<h5 class="card-title">{}</h5>
-
-						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-					<div class="table-responsive">
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>Km:</th>
-									<td>Transmissão:</td>
-								</tr>
-								<tr>
-									<td>Motorização:</td>
-									<td>Ano:</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-						<div class="text-center m-2">
-							<button class="btn-card rounded-pill">Mais Detalhes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row p-2 d-flex justify-content-center">
-			<div class="col-md-3 m-4">
-				<div class="card bg-light shadow-sm">
-					<div class="card-body">
-						<h5 class="card-title">{}</h5>
-
-						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-					<div class="table-responsive">
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>Km:</th>
-									<td>Transmissão:</td>
-								</tr>
-								<tr>
-									<td>Motorização:</td>
-									<td>Ano:</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-						<div class="text-center m-2">
-							<button class="btn-card rounded-pill">Mais Detalhes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 m-4">
-				<div class="card bg-light shadow-sm">
-					<div class="card-body">
-						<h5 class="card-title">{}</h5>
-
-						<img src="images/Carros/img1.jpeg" class="img-fluid" alt="...">
-					<div class="table-responsive">
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>Km:</th>
-									<td>Transmissão:</td>
-								</tr>
-								<tr>
-									<td>Motorização:</td>
-									<td>Ano:</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-						<div class="text-center m-2">
-							<button class="btn-card rounded-pill">Mais Detalhes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 m-4">
+			<div class="col-md-4 mt-5">
 				<div class="card bg-light shadow-sm">
 					<div class="card-body">
 						<h5 class="card-title">{}</h5>
@@ -407,7 +326,7 @@ require_once("scripts/header.php");
 			</div>
 		</div>
 
-		<ul class="pagination pagination-sm justify-content-center">
+		<ul class="pagination pagination-sm justify-content-center mt-5">
 			<li class="page-item"><a class="page-link" href="">1</a></li>
 			<li class="page-item"><a class="page-link" href="">2</a></li>
 			<li class="page-item"><a class="page-link" href="">3</a></li>

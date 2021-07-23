@@ -7,5 +7,12 @@ $('document').ready(function () {
             }
         }
     });
+    $('#telefonecontato').mask('(00) Z0000-0000', {
+        translation: {
+            'Z': {
+                pattern: /9/, optimal:false
+            }
+        }
+    });
 });
 

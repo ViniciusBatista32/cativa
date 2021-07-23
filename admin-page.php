@@ -23,34 +23,133 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="style/master.css">
+        <link rel="stylesheet" href="style/admin.css">
 </head>
+
 <body>
-      
-<div class="offcanvas-body">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-sm-3  admin-side shadow-sm h-100">
+                <img src="images/carros/img1.jpeg" class="perfilfoto mb-2 mt-5" alt="">
+                <ul class="m-0">
+                    <li class="mt-5">
+                        <button class="btn-adicionar-carro"><i class="fas fa-car inline-icon"></i>Adicionar Veículo</button>
+                    </li>
+                    <li class="mt-4">
+                        <a href="admin-status.php"><i class="fas fa-info-circle inline-icon"></i>Informações</a>
+                    </li>
+                </ul>
 
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">
-    <a class="menu-itens" href="estoque.php"> <i class="fas fa-car inline-icon"></i> Estoque </a></li>
+                <div class="botaovoltar">
+                    <a href="index.php"><i class="fas fa-sign-out-alt logout"></i></a>
+                </div>
+            </div>
+            <div class="col">
+            
+            <p class="text-center estoque-escrita">CARROS EM ESTOQUE</p>
 
-    <li class="list-group-item">
-    <a class="menu-itens" href="financiamento.php"> <i class="fas fa-coins inline-icon"></i> Financiamento </a></li>
-
-    <li class="list-group-item">
-    <a class="menu-itens" href="contato.php"> <i class="fas fa-phone-alt inline-icon"></i> Contato </a></li>
-</ul>
-
-<div class="container-fluid">
-    <div class="row justify-content-md-center m-6">
-      <div class="col">
-          <a href="https://facebook.com.br/cativaveiculosoficial"><i class="fab fa-facebook"></i></a>
-      </div>
-      <div class="col">
-          <a href="https://api.whatsapp.com/send?phone=5511983340201"><i class="fab fa-whatsapp"></i></a>
-      </div>
-      <div class="col">
-          <a href="https://www.instagram.com/cativaveiculos/"><i class="fab fa-instagram"></i></a>
-      </div>
-</div>
-</div>
+                <div class="container w-100 h-75 p-5 mr-0 shadow-sm rounded">
+                    
+                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
+                        
+                        <div class="col linha-carro-admin">
+                            <img src="images/carros/img1.jpeg" class="rounded">
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            KIA Cerato 1.6
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            AAA-0000
+                        </div>
+                        <div class="col text-end">
+                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
+                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
+                        <div class="col linha-carro-admin">
+                            <img src="images/carros/img1.jpeg" class="rounded">
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            KIA Cerato 1.6
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            AAA-0000
+                        </div>
+                        <div class="col text-end">
+                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
+                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
+                        <div class="col linha-carro-admin">
+                            <img src="images/carros/img1.jpeg" class="rounded">
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            KIA Cerato 1.6
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            AAA-0000
+                        </div>
+                        <div class="col text-end">
+                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
+                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
+                        <div class="col linha-carro-admin">
+                            <img src="images/carros/img1.jpeg" class="rounded">
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            KIA Cerato 1.6
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            AAA-0000
+                        </div>
+                        <div class="col text-end">
+                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
+                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
+                        <div class="col linha-carro-admin">
+                            <img src="images/carros/img1.jpeg" class="rounded">
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            KIA Cerato 1.6
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            AAA-0000
+                        </div>
+                        <div class="col text-end">
+                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
+                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
+                        <div class="col linha-carro-admin">
+                            <img src="images/carros/img1.jpeg" class="rounded">
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            KIA Cerato 1.6
+                        </div>
+                        <div class="col mx-auto my-2 text-center">
+                            AAA-0000
+                        </div>
+                        <div class="col text-end">
+                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
+                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <ul class="pagination mt-5 pagination-sm justify-content-center p-0">
+                        <li class=""><a class="page-link" href="">1</a></li>
+                        <li class=""><a class="page-link" href="">2</a></li>
+                        <li class=""><a class="page-link" href="">3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>

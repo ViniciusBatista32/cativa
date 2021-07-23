@@ -2,7 +2,7 @@
   <!-- Grid container -->
   <div class="container-fluid w-100">
     <!--Grid row-->
-    <div class="row">
+    <div class="row w-100">
       <!--Grid column-->
       <div class="col-lg-2 text-center">
         <p>
