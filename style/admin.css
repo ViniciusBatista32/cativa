@@ -1,7 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
-/*Estilos dos botões*/
+/*Estilos dos botÃµes*/
+
+#excluirCarro .btn{
+    transition: 0.8s;
+    color: #FFFFFF;
+    background-color: #D63232;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.125rem;
+    border-radius: 20px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#excluirCarro .btn:hover{
+    transition: 0.8s;
+    color: #D63232;
+    background-color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    border-radius: 20px;
+    font-size: 1.125rem;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#excluirCarro p {
+    font-size: 1.125rem;
+    font-family: Roboto;
+    font-weight: 900;
+}
 
 .btn-card{
 	transition: 0.6s;
@@ -22,13 +52,76 @@
 	background-color: #FFFFFF;
 }
 
+/* ConfiguraÃ§Ãµes do carrossel */
+
+.col-md-3 .card .card-img .img-fluid,
+.col-md-3 .card .card-img,
+.col-md-3 .card{
+    min-height: 20vh;
+}
+
+.col-md-3 .card .card-img .img-fluid{
+    position: absolute;
+    top: 0;
+    left: 0%;
+}
+
+
+.carousel .carousel-item .a{
+    min-height: 20vh;
+}
+
+.carousel .carousel-item {
+    height: 35vh;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 35vh;
+  }
+
+.quatroItensCarrossel{
+    height: 20px;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+   
+    .carousel-inner .carousel-item-end.active .a,
+    .carousel-inner .carousel-item-next .a{
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active .a, 
+    .carousel-inner .carousel-item-prev .a{
+      transform: translateX(-25%);
+    }
+
+
+.carousel-inner .carousel-item-end .a,
+.carousel-inner .carousel-item-start .a{ 
+  transform: translateX(0);
+}
+
+/*Estilizacao da caixa de exclusao de automoveis*/
+
+.avisoExclusao{
+    font-size: 5rem;
+    color: #E5D117;
+}
+
 /*estilo das listas*/
 
 ul{
 	list-style-type: none;
 }
 
-/*estilo do botão de voltar da página admin*/
+/*estilo do botÃ£o de voltar da pÃ¡gina admin*/
 
 
 .voltar{
@@ -82,7 +175,7 @@ ul{
 
 }
 
-/*estilização do formulário*/
+/*estilizaÃ§Ã£o dos formulÃ¡rios*/
 
 form h4{
     font-size: 3rem;
@@ -100,14 +193,11 @@ form .escrita{
     color: #FFFFFF;
 }
 
-form label{
-    font-family: Roboto;
-    font-weight: 500;
-    color: #FFFFFF;
-    font-size: 1.125rem;
+form input{
+    height: 2.5rem;
 }
 
-form input{
+form select{
     height: 2.5rem;
 }
 
@@ -127,6 +217,69 @@ form input{
     justify-content: center;
 }
 
+.form-login label{
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+}
+
+/* FormulÃ¡rio de inserÃ§Ã£o dos carros */
+
+.formInserirCarro label{
+    color: #787878;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.formInserirCarro .form-check-label{
+    color: #626262;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.formInserirCarro .btn{
+    transition: 0.8s;
+    color: #FFFFFF;
+    background-color: #D63232;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.formInserirCarro .btn:hover{
+    transition: 0.8s;
+    background-color: #FFFFFF;
+    color: #D63232;
+}
+
+.formInserirCarro .btn:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.formInserirCarro select{
+    font-size: 1rem;
+    color: #787878;
+}
+
+
+.opcionais-text{
+    color: #787878;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+}
+
+/*estilizaÃ§Ã£o da parte de baixo da pagina adm*/
+
 .escrita-baixa {
 
     font-family: Roboto;
@@ -137,7 +290,7 @@ form input{
     
 }
 
-/*estilização da página de ambientação do administrador.*/
+/*estilizaÃ§Ã£o da pÃ¡gina de ambientaÃ§Ã£o do administrador.*/
 
 body{
     margin-top: 0;
@@ -205,7 +358,11 @@ html, body{
     color: #BD1D1D;
 }
 
-/*segunda coluna (dos veículos anunciados)*/
+.inline-icon{
+	margin-right: 0.5rem;
+}
+
+/*segunda coluna (dos veÃ­culos anunciados)*/
 
 .linha-carro-admin img{
     width: 43px;

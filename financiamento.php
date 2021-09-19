@@ -6,6 +6,8 @@ require_once("header.php")
 <p class="text-center description-financing">Bem-vindo ao financiamento! Siga os passos descritos a seguir para ter o
   seu retorno!</p>
 
+  <a class="whatsappbutton rounded-circle" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp ?>"><i class="fab fa-whatsapp text-center h-100 w-100"></i></a>
+
 
 <form action="" class="w-50 mx-auto">
   <div class="form-group mt-5">

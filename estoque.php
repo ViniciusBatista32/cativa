@@ -4,7 +4,7 @@ require_once("header.php")
 
 <!--whatsapp button-->
 
-<a class="whatsappbutton" href="https://api.whatsapp.com/send?phone=5511983340201"><i class="fab fa-whatsapp"></i></a>
+<a class="whatsappbutton rounded-circle" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp ?>"><i class="fab fa-whatsapp text-center h-100 w-100"></i></a>
 
 <h1 class="text-center mb-5 title" id="">Bem-vindo ao nosso estoque</h1>
 <p class="text-center description-financing m-5">Carros revisados e de procedência, esperando a sua escolha.</p>
