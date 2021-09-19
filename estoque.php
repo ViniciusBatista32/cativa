@@ -1,5 +1,5 @@
 <?php
-require_once("scripts/header.php")
+require_once("header.php")
 ?>
 
 <!--whatsapp button-->
@@ -296,7 +296,6 @@ require_once("scripts/header.php")
 
 </div>
 
-
 <?php
-require_once("scripts/footer.php")
+require_once("footer.php")
 ?>

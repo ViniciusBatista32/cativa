@@ -1,13 +1,9 @@
 <?php
-require_once("scripts/header.php")
+require_once("header.php")
 ?>
-
-
-
 
 <h1 class="text-center mb-5 title" id="">Entre em contato conosco!</h1>
 <p class="text-center description-financing m-5">Estaremos te esperando com o melhor atendimento possível.</p>
-
 
 <div class="container contato">
     <div class="row">
@@ -96,5 +92,5 @@ require_once("scripts/header.php")
 
 
 <?php
-require_once("scripts/footer.php")
+require_once("footer.php")
 ?>

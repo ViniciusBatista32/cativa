@@ -1,5 +1,5 @@
 <?php
-require_once("scripts/header.php")
+require_once("header.php")
 ?>
 
 <h1 class="text-center mb-5 title" id="">Financiamento</h1>
@@ -60,5 +60,5 @@ require_once("scripts/header.php")
 
 
 <?php
-require_once("scripts/footer.php")
+require_once("footer.php")
 ?>
