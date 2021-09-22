@@ -225,3 +225,8 @@ footer a:hover{
 	color: #04C617;
 	background-color: #FFFFFF;
 }
+
+.passa-pagina
+{
+	cursor: pointer;
+}
