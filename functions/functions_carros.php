@@ -10,15 +10,18 @@ class functionsCarros
     * @param mixed|null $limit_max Registro onde termina o limite de busca
     * @return mixed Retona todos carros encontrados. Também retorna o máximo de linhas selecionas se $retorna_max = TRUE
     */ 
-    public function listaCarros($id_carro = NULL, $retorna_max = FALSE, $limit_min = NULL, $limit_max = NULL)
+    public function listaCarros($id_carro = NULL, $limit_min = NULL, $limit_max = NULL)
     {
-        $sql = "SELECT * FROM carros where 1 = 1 ";
+        $sql = "SELECT * FROM carros
+        LEFT JOIN marcas
+        ON carros.carros_marca = marcas.marcas_id
+        where 1 = 1 ";
 
         $arr = array();
 
         if(is_numeric($id_carro))
         {
-            $sql .= " AND carros_id = ? ";
+            $sql .= " AND carros.carros_id = ? ";
             $arr[] = $id_carro;
         }
 
@@ -45,10 +48,7 @@ class functionsCarros
         }
         else
         {
-            if($retorna_max)
-                return array($stmt->fetchAll(\PDO::FETCH_ASSOC), $stmt->rowCount());
-            else
-                return $stmt->fetchAll(\PDO::FETCH_ASSOC);  
+            return $stmt->fetchAll(\PDO::FETCH_ASSOC);  
         }
     }
 
@@ -96,6 +96,17 @@ class functionsCarros
         // } else {
         //     return true;
         // }
+    }
+
+    public function retornaCountRegistros()
+    {
+        $sql = "SELECT count(*) FROM carros";
+
+        $stmt = Conexao::getConn()->query($sql);
+
+        $total_registros = $stmt->fetchAll(\PDO::FETCH_NUM);
+
+        return $total_registros[0][0];
     }
 
     // reset id section

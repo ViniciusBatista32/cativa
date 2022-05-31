@@ -13,13 +13,13 @@ if((is_numeric($pagina) && $pagina > 0) && (is_numeric($max_registros) && $max_r
     if($limite_max > 0)
     {
         $instance = new functionsCarros;
-        $estoque  = $instance->listaCarros(NULL, FALSE, $limite_min, $limite_max);
+        $estoque  = $instance->listaCarros(NULL, $limite_min, $limite_max);
 
         $html = "";
         $i = 0;
         foreach($estoque as $dados){
             if($i == 0){
-                $html .= "<div class='row p-2 d-flex justify-content-center'>";
+                $html .= "<div class='row p-2 d-flex'>";
             }
 
             $nome 		   = $dados['carros_nome'];
@@ -31,29 +31,29 @@ if((is_numeric($pagina) && $pagina > 0) && (is_numeric($max_registros) && $max_r
             $ano 		   = $dados['carros_ano'];
 
             $html .= "
-            <div class='col-md-4 mt-4'>
+            <div class='col-md-4 mt-4 w-25'>
                 <div class='card bg-light shadow-sm'>
                     <div class='card-body'>
                         <h5 class='card-title'>$nome</h5>
 
-                        <img src='images/Carros/$imagem' class='img-fluid'>
+                        <img src='images/Carros/$imagem' class='img-fluid mb-2'>
 
                         <div class='table-responsive'>
-                            <table class='table'>
+                            <table class='table table-borderless text-center'>
                                 <tbody>
                                     <tr>
-                                        <td>Km: $quilometragem</th>
-                                        <td>Transmissão: $transmissao</td>
+                                        <td>$quilometragem Km</th>
+                                        <td>$transmissao</td>
                                     </tr>
                                     <tr>
-                                        <td>Motorização: $motorizacao CV</td>
-                                        <td>Ano: $ano</td>
+                                        <td>$motorizacao CV</td>
+                                        <td>$ano</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <div class='text-center m-2'>
+                        <div class='text-center mb-2'>
                             <a href='#'><button class='btn-card rounded-pill'>Mais Detalhes</button></a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ if((is_numeric($pagina) && $pagina > 0) && (is_numeric($max_registros) && $max_r
             </div>";
             $i++;
 
-            if($i == 3){
+            if($i == 4){
                 $html .= "</div>";
                 $i = 0;
             }

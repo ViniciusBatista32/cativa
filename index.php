@@ -2,13 +2,11 @@
 require_once("header.php");
 require_once("functions/functions_carros.php");
 
-$max_registros = 3;
+$max_registros = 6;
 
-$instance = new functionsCarros;
-$estoque  = $instance->listaCarros(NULL, TRUE);
-
-if(!empty($estoque[0]))
-	$total_registros = $estoque[1];
+$instance 		 = new functionsCarros;
+$total_registros = $instance->retornaCountRegistros();
+$estoque  		 = $instance->listaCarros(NULL, 0, $max_registros);
 ?>
 
 <script>
@@ -61,17 +59,8 @@ if(!empty($estoque[0]))
 </div>
 
 <!-- Whatsapp Button -->
-<a class="whatsappbutton rounded-circle" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp ?>"><i class="fab fa-whatsapp text-center h-100 w-100"></i></a>
+<a class="whatsappbutton rounded-circle" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp ?>"><i class="fab fa-whatsapp text-center h-100 w-100 fs-2"></i></a>
 <!-- Whatsapp Button -->
-
-<!-- Destaques -->
-<p class="fs-1 text-center m-5">DESTAQUES DA SEMANA!</p>
-
-<!-- Cards -->
-<div class="row w-100" id="destaques">
-
-</div>
-<!-- Destaques -->
 
 <!-- Cards dos filtros-->
 <p class="fs-1 text-center m-5" style="color:#FF5D5D">NOSSO ESTOQUE</p>
@@ -116,11 +105,11 @@ if(!empty($estoque[0]))
 		<div class="card-carros">
 			<?php
 				$i = 0;
-				foreach($estoque[0] as $dados){
+				foreach($estoque as $dados){
 					if($i == 0){
-						echo "<div class='row p-2 d-flex justify-content-center'>";
+						echo "<div class='row p-2 d-flex'>";
 					}
-
+					
 					$nome 		   = $dados['carros_nome'];
 					$imagem		   = json_decode($dados['carros_imagens']);
 					$imagem 	   = !empty($imagem) ? $imagem[0] : "default.jpg";
@@ -128,31 +117,32 @@ if(!empty($estoque[0]))
 					$transmissao   = $dados['carros_transmissao'] == 1 ? "Manual" : "Automático";
 					$motorizacao   = $dados['carros_motorizacao'];
 					$ano 		   = $dados['carros_ano'];
+					$marca		   = $dados['marcas_nome'];
 
 					echo "
-					<div class='col-md-4 mt-4'>
+					<div class='col-md-4 mt-4 w-25'>
 						<div class='card bg-light shadow-sm'>
 							<div class='card-body'>
-								<h5 class='card-title'>$nome</h5>
+								<h5 class='card-title'>$marca $nome</h5>
 
-								<img src='images/Carros/$imagem' class='img-fluid'>
+								<img src='images/carros/$imagem' class='img-fluid mb-2'>
 
 								<div class='table-responsive'>
-									<table class='table'>
+									<table class='table table-borderless text-center'>
 										<tbody>
 											<tr>
-												<td>Km: $quilometragem</th>
-												<td>Transmissão: $transmissao</td>
+												<td>$quilometragem Km</th>
+												<td>$transmissao</td>
 											</tr>
 											<tr>
-												<td>Motorização: $motorizacao CV</td>
-												<td>Ano: $ano</td>
+												<td>$motorizacao CV</td>
+												<td>$ano</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 
-								<div class='text-center m-2'>
+								<div class='text-center mb-2'>
 									<a href='#'><button class='btn-card rounded-pill'>Mais Detalhes</button></a>
 								</div>
 							</div>
@@ -160,7 +150,7 @@ if(!empty($estoque[0]))
 					</div>";
 					$i++;
 
-					if($i == 3){
+					if($i == 4){
 						echo "</div>";
 						$i = 0;
 					}

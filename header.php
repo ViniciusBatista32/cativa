@@ -38,66 +38,16 @@ require_once("functions/functions_ferramentas.php");
 </head>
 
 <body>
-	<nav class="navbar fixed-top m-0 p-0 w-100">
+	<nav class="navbar m-0 p-0 w-100">
 		<div class="container">
-			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
-				<li class="nav-item p-0 m-0">
-					<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="fas fa-bars inline-icon"></i>Menu</a>
-				</li>
-			</ul>
-
 			<ul class="nav navbar-nav navbar-brand mx-auto m-0 p-0">
 				<li class="nav-item p-0 m-0">
-					<a href="index.php"><img src="images/logo-cativa.png" width="70"></a>
+					<a href="index.php"><img src="images/logo-cativa.png" width="50"></a>
 				</li>
 			</ul>
 
-			<ul class="nav navbar-nav pull-sm-right">
-				<li class="nav-item m-0 p-0">
-					<a class="btn" href="admin.php"><i class="far fa-user inline-icon"></i>Admin</a>
-				</li>
+			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
+				<li class="nav-item p-0 m-0">Menu</a></li>
 			</ul>
 		</div>
 	</nav>
-
-	<!-- Sidebar (OffCanvas) -->
-
-	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-		<div class="offcanvas-header shadow-sm p-1 bg-light">
-
-			<button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-bars inline-icon"></i>Menu</h5>
-
-		</div>
-
-		<div class="offcanvas-body">
-
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">
-					<a class="menu-itens" href="estoque.php"> <i class="fas fa-car inline-icon"></i> Estoque </a>
-				</li>
-
-				<li class="list-group-item">
-					<a class="menu-itens" href="financiamento.php"> <i class="fas fa-coins inline-icon"></i> Financiamento </a>
-				</li>
-
-				<li class="list-group-item">
-					<a class="menu-itens" href="contato.php"> <i class="fas fa-phone-alt inline-icon"></i> Contato </a>
-				</li>
-			</ul>
-
-			<div class="container-fluid">
-				<div class="row justify-content-md-center m-6">
-					<div class="col">
-						<a href="https://facebook.com.br/cativaveiculosoficial"><i class="fab fa-facebook"></i></a>
-					</div>
-					<div class="col">
-						<a href="https://api.whatsapp.com/send?phone=5511983340201"><i class="fab fa-whatsapp"></i></a>
-					</div>
-					<div class="col">
-						<a href="https://www.instagram.com/cativaveiculos/"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
