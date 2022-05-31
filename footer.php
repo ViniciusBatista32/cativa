@@ -11,29 +11,29 @@
 				</div>
 				<!--Grid column-->
 
-				<!-- Grid Column -->
-				<div class="col">
-					<h5 class="title-footer">
-						<div class="quadradofofinho"></div> Contato
-					</h5>
-					<p class="paragraph-footer">(11) 4587-6813</p>
+			<!-- Grid Column -->
+			<div class="col">
+				<h5 class="title-footer mt-5">
+					<div class="quadradofofinho"></div> Contato
+				</h5>
+				<p class="paragraph-footer">(11) 4587-6813</p>
 
-					<h5 class="title-footer">
-						<div class="quadradofofinho"></div> Contato por Whatsapp
-					</h5>
-					<p class="paragraph-footer">(11) 98334-0201</p>
+				<h5 class="title-footer mt-5">
+					<div class="quadradofofinho"></div> Contato por Whatsapp
+				</h5>
+				<p class="paragraph-footer">(11) 98334-0201</p>
 
-					<h5 class="title-footer">
-						<div class="quadradofofinho"></div> Email
-					</h5>
-					<p class="paragraph-footer">ferapautomoveis@hotmail.com</p>
-				</div>
+				<h5 class="title-footer mt-5">
+					<div class="quadradofofinho"></div> Email
+				</h5>
+				<p class="paragraph-footer">ferapautomoveis@hotmail.com</p>
+			</div>
 
-				<!--Grid column-->
-				<div class="col">
-					<h5 class="title-footer p-0 m-0">
-						<div class="quadradofofinho"></div> Sobre nós
-					</h5>
+			<!--Grid column-->
+			<div class="col">
+				<h5 class="title-footer p-0 mt-5">
+					<div class="quadradofofinho"></div> Sobre nós
+				</h5>
 
 					<p class="paragraph-footer">
 						Somos uma empresa séria situada no ramo de compra e venda de veículos semi-novos e usados cujo nosso principal

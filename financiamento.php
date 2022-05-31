@@ -8,7 +8,6 @@ require_once("header.php")
 
   <a class="whatsappbutton rounded-circle" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp ?>"><i class="fab fa-whatsapp text-center h-100 w-100"></i></a>
 
-
 <form action="" class="w-50 mx-auto">
   <div class="form-group mt-5">
     <label for="nome">Nome Completo:</label>

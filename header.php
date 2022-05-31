@@ -31,20 +31,32 @@ require_once("functions/functions_ferramentas.php");
 	<!-- Master CSS -->
 	<link rel="stylesheet" href="style/master.css">
 
+    <!-- Owl carrossel -->
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+
 	<!-- Outros CSS-->
 	<link rel="stylesheet" href="style/style-financing.css">
-	<link rel="stylesheet" href="style/contato.css">
 
 </head>
 
 <body>
-	<nav class="navbar m-0 p-0 w-100">
+	<nav class="navbar m-0 p-0 w-100 fixed-top">
 		<div class="container">
-			<ul class="nav navbar-nav navbar-brand mx-auto m-0 p-0">
+			<ul class="nav navbar-nav pull-sm-left">
 				<li class="nav-item p-0 m-0">
-					<a href="index.php"><img src="images/logo-cativa.png" width="50"></a>
+					<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="fas fa-bars inline-icon"></i>Menu</a>
 				</li>
 			</ul>
+            <a href="index.php"><img src="images/logo-cativa.png" height="50" style="background-origin: border-box;"></a>
+		</div>
+	</nav>
+
+	<!-- Sidebar (OffCanvas) -->
+
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header shadow-sm p-1 bg-light">
+
+			<button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-bars inline-icon"></i>Menu</h5>
 
 			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
 				<li class="nav-item p-0 m-0">Menu</a></li>

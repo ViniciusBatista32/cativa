@@ -121,6 +121,11 @@ ul{
 	list-style-type: none;
 }
 
+.listaCarros{
+
+    margin-left: 200rem;
+}
+
 /*estilo do botÃ£o de voltar da pÃ¡gina admin*/
 
 
@@ -191,14 +196,6 @@ form .escrita{
     font-weight: 900;
     font-style: normal;
     color: #FFFFFF;
-}
-
-form input{
-    height: 2.5rem;
-}
-
-form select{
-    height: 2.5rem;
 }
 
 
@@ -387,10 +384,6 @@ html, body{
     width: 30px;
     height: 36px;
     font-size: 1.25rem;
-}
-
-.container .row{
-    background-color:#EFEFEF ;
 }
 
 .estoque-escrita{

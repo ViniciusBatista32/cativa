@@ -2,6 +2,8 @@
 require_once("header.php")
 ?>
 
+<link rel="stylesheet" href="./style/contato.css">
+
 <h1 class="text-center mb-5 title" id="">Entre em contato conosco!</h1>
 <p class="text-center description-financing m-5">Estaremos te esperando com o melhor atendimento possível.</p>
 
@@ -46,7 +48,7 @@ require_once("header.php")
             </div>
         </div>
         <div class="col-md-auto">
-            <img src="images/imagem-contato.png" class="contato-imagem img-responsive">
+            <img id="contactImage" src="images/imagem-contato.png" class="contato-imagem img-responsive">
         </div>
     </div>
 </div>
@@ -54,9 +56,9 @@ require_once("header.php")
 <h1 class="text-center mb-5 mt-3">Ou então nos envie uma mensagem!</h1>
 
 <form action="">
-<div class="container email p-4">
-    
+    <div class="container email p-4">
         <div class="row">
+
             <div class="col">
                 <div class="form-group mt-3">
                     <label for="nomecontato">Nome:</label>
@@ -71,6 +73,7 @@ require_once("header.php")
                     <input type="text" class="form-control" id="telefonecontato" required>
                 </div>
             </div>
+
             <div class="col">
                 <div class="form-group mt-3">
                     <label for="mensagemcontato">Mensagem:</label>
@@ -81,11 +84,10 @@ require_once("header.php")
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </form>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="scripts/jquery.mask.js"></script>
 <script src="scripts/mask.js"></script>
 

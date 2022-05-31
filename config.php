@@ -7,4 +7,4 @@ const DB_NAME = "nous";
 const DB_USER = "root";
 const DB_PASSWORD = "";
 
-$whatsapp = "5511983340201";
+$whatsapp = "5511988340261";
