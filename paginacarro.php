@@ -3,161 +3,193 @@ require_once("header.php");
 require_once("functions/functions_carros.php");
 ?>
 
+<link rel="stylesheet" href="./style/paginaCarro.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <div class="row">
-    <div class="col-md-5">
-        <div id="carroselAdicionarVeiculo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner shadow-sm rounded">
-                <div class="carousel-item active">
-                    <img src="images/carrossel-images/Financiamento.png" class="d-block w-100 mx-auto" alt="primeira-imagem">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/carrossel-images/Garantia.png" class="d-block w-100 mx-auto" alt="segunda-imagem">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/carrossel-images/Marketing.png" class="d-block w-100 mx-auto" alt="terceira-imagem">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carroselAdicionarVeiculo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carroselAdicionarVeiculo" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <div class="col">
-        <div class="row">
-            <div class="col-md-4">
-                <label for="marca">Marca:</label>
-                <select name="marca" class="form-select form-control">
-                    <option selected="">Escolher...</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                </select>
-            </div>
-            <div class="col">
-                <label for="modelo">Modelo:</label>
-                <select type="text" name="modelo" class="form-select form-control">
-                    <option selected="">Escolher...</option>
-                    <option value="">Polo</option>
-                </select>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col">
-                <label for="anoModelo">Ano do Modelo:</label>
-                <select name="anoModelo" class="form-select form-control">
-                    <option selected="">Escolher...</option>
-                    <option value="1">2000</option>
-                    <option value="2">2001</option>
-                </select>
-            </div>
-            <div class="col">
-                <label for="finalPlaca">Final da Placa:</label>
-                <select name="finalPlaca" class="form-select form-control">
-                    <option selected="">Escolher...</option>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-            </div>
-            <div class="col">
-                <label for="km">Km:</label>
-                <input type="text" id="km" class="form-control" required>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col">
-                <label for="cor">Cor:</label>
-                <input type="text" name="cor" class="form-control" placeholder="Cor">
-            </div>
-            <div class="col">
-                <label for="motorizacao">Motorização:</label>
-                <select name="motorizacao" class="form-select form-control">
-                    <option selected="">Escolher...</option>
-                    <option value="1">1.0</option>
-                    <option value="2">1.4</option>
-                    <option value="3">1.6</option>
-                </select>
-            </div>
-            <div class="col">
-                <label for="unicoDono">Único dono:</label>
-                <select name="unicoDono" class="form-select form-control">
-                    <option selected="">Escolher...</option>
-                    <option value="1">Sim</option>
-                    <option value="2">Não</option>
-                </select>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col opcionais">
-        <h2 class="opcionais-text">Opcionais</h2>
-        <div class="container border rounded p-2">
-            <div class="col d-flex justify-content-between">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label p-0 m-0" for="inlineCheckbox1">Air-bag</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label m-0 p-0" for="inlineCheckbox2">Trava
-                        Elétrica</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label m-0 p-0" for="inlineCheckbox3">Sensor
-                        de
-                        ré</label>
-                </div>
-            </div>
-            <div class="col d-flex justify-content-between mt-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label p-0 m-0" for="inlineCheckbox1">Alarme</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label p-0 m-0" for="inlineCheckbox2">Vidro
-                        Elétrico</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label m-0 p-0" for="inlineCheckbox3">Câmera
-                        de
-                        ré</label>
-                </div>
-            </div>
-            <div class="col d-flex justify-content-between mt-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label m-0 p-0" for="inlineCheckbox1">Ar-condicionado</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label m-0 p-0" for="inlineCheckbox2">Som</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label m-0 p-0" for="inlineCheckbox3">Direção
-                        Hidráulica</label>
+    <div class="col-md-5 w-100">
+        <!--Carrousel-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img2.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img2.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img3.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img4.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img5.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img6.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img7.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img8.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="./images/Carros/img9.jpeg" alt="image" class="card-img-top">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <!-- End Carrousel-->
 
 
+        <!-- Vehicle caracteristics -->
+        <div class="container">
 
-<?php
-require_once("footer.php")
-?>
+            <h3 class="mt-4 d-flex justify-content-center">Voyage 2012</h3>
+                <h4 class="d-flex justify-content-center text-danger">R$38.900,00</h4>
+         <div class="row mt-4">
+                <div class="col p-0 m-0">
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Marca:</li>
+                        <li class="list-group-item">Modelo:</li>
+                        <li class="list-group-item">Ano do Modelo</li>
+                        <li class="list-group-item">Final Placa:</li>
+                    </ul>
+                </div>
+                <div class="col p-0 m-0">
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">KM:</li>
+                        <li class="list-group-item">Cor:</li>
+                        <li class="list-group-item">Motorização:</li>
+                        <li class="list-group-item">Único dono:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Vehicle caracteristics-->
+
+    </div>
+
+
+    <!-- Vehicle optionals -->
+
+    <div class="m-5 mb-5 p-0 rounded mt-4">
+        <h2 class="mb-4">Opcionais do veículo</h2>
+            <div class="row mb-5">
+
+                <div class="col">
+                        <ul class="list-group">
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Ar-condicionado
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Alarme
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Direção hidráulica
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col m-0 p-0">
+                        <ul class="list-group">
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Air-bags
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Freio ABS
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Vidros-elétricos
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col m-0 p-0">
+                        <ul class="list-group">
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Câmera de ré
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Bancos de couro
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Sistema de som
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col m-0 p-0">
+                        <ul class="list-group">
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Computador de bordo
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Teto solar
+                            </li>
+                            <li class="m-1">
+                                <input class="form-check-input me-1" type="checkbox">Rodas de liga leve
+                            </li>
+                        </ul>
+                </div>
+                
+            </div>
+    </div>
+
+    <!-- End Vehicle Optionals -->
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.mask.js"></script>
+    <script src="scripts/mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+    </script>
+
+
+    <?php
+    require_once("footer.php")
+    ?>

@@ -1,0 +1,63 @@
+.seeMore{
+    color: rgb(228, 34, 34);
+    text-decoration: none;
+    transition: .8s;
+    border-radius: 0px 0px 10px 10px;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 100%;
+}
+
+.seeMore:hover{
+    color: white;
+    background: red;
+    border-radius: 0px 0px 10px 10px;
+
+    transition: .8s;
+}
+
+.cardInfo{
+    color: rgb(100, 100, 100);
+    font-weight: 700;
+    size: 18px;
+
+    margin-left: 1rem;
+}
+
+.card-body > .card-title {
+    font-weight: 700;
+    color: black;
+    background: white;
+    font-size: 28px;
+}
+
+#stock-container{
+    border-radius: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.35rem;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+#filter-container select {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	font-family: Roboto;
+	font-weight: 300;
+	border-radius: 35px;
+}
+
+#filter-container{
+    border-radius: 35px;
+    margin-bottom: -1.8%;
+    background: rgb(235, 233, 233);
+
+    z-index: 2;
+}

@@ -13,17 +13,17 @@
 
 			<!-- Grid Column -->
 			<div class="col">
-				<h5 class="title-footer">
+				<h5 class="title-footer mt-5">
 					<div class="quadradofofinho"></div> Contato
 				</h5>
 				<p class="paragraph-footer">(11) 4587-6813</p>
 
-				<h5 class="title-footer">
+				<h5 class="title-footer mt-5">
 					<div class="quadradofofinho"></div> Contato por Whatsapp
 				</h5>
 				<p class="paragraph-footer">(11) 98334-0201</p>
 
-				<h5 class="title-footer">
+				<h5 class="title-footer mt-5">
 					<div class="quadradofofinho"></div> Email
 				</h5>
 				<p class="paragraph-footer">ferapautomoveis@hotmail.com</p>
@@ -31,7 +31,7 @@
 
 			<!--Grid column-->
 			<div class="col">
-				<h5 class="title-footer p-0 m-0">
+				<h5 class="title-footer p-0 mt-5">
 					<div class="quadradofofinho"></div> Sobre nós
 				</h5>
 
@@ -44,7 +44,7 @@
 			</div>
 
 			<div class="col">
-				<h5 class="title-footer p-0 m-0">
+				<h5 class="title-footer p-0 mt-5">
 					<div class="quadradofofinho"></div> Localização
 				</h5>
 				<div class="paragraph-footer">

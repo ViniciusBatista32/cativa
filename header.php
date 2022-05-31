@@ -30,32 +30,23 @@ require_once "config.php";
 	<!-- Master CSS -->
 	<link rel="stylesheet" href="style/master.css">
 
+    <!-- Owl carrossel -->
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+
 	<!-- Outros CSS-->
 	<link rel="stylesheet" href="style/style-financing.css">
-	<link rel="stylesheet" href="style/contato.css">
 
 </head>
 
 <body>
-	<nav class="navbar fixed-top m-0 p-0 w-100">
+	<nav class="navbar m-0 p-0 w-100 fixed-top">
 		<div class="container">
-			<ul class="nav navbar-nav pull-sm-left m-0 p-0">
+			<ul class="nav navbar-nav pull-sm-left">
 				<li class="nav-item p-0 m-0">
 					<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="fas fa-bars inline-icon"></i>Menu</a>
 				</li>
 			</ul>
-
-			<ul class="nav navbar-nav navbar-brand mx-auto m-0 p-0">
-				<li class="nav-item p-0 m-0">
-					<a href="index.php"><img src="images/logo-cativa.png" width="70"></a>
-				</li>
-			</ul>
-
-			<ul class="nav navbar-nav pull-sm-right">
-				<li class="nav-item m-0 p-0">
-					<a class="btn" href="admin.php"><i class="far fa-user inline-icon"></i>Admin</a>
-				</li>
-			</ul>
+            <a href="index.php"><img src="images/logo-cativa.png" height="50" style="background-origin: border-box;"></a>
 		</div>
 	</nav>
 

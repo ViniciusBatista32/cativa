@@ -33,10 +33,7 @@
                 <img src="images/carros/img1.jpeg" class="perfilfoto mb-2 mt-5" alt="">
                 <ul class="m-0">
                     <li class="mt-5">
-                        <button class="btn-adicionar-carro"><i class="fas fa-car inline-icon"></i>Adicionar Veículo</button>
-                    </li>
-                    <li class="mt-4">
-                        <a href="admin-status.php"><i class="fas fa-info-circle inline-icon"></i>Informações</a>
+                        <a href="admin-page.php"><i class="fas fa-info-circle inline-icon"></i>Adicionar Veículo</a>
                     </li>
                 </ul>
             </div>
