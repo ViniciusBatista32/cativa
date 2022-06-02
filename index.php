@@ -1,13 +1,11 @@
 <?php
 require_once("header.php");
 require_once("functions/functions_carros.php");
-
-$max_registros = 6;
-
-$instance 		 = new functionsCarros;
-$total_registros = $instance->retornaCountRegistros();
-$estoque  		 = $instance->listaCarros(NULL, 0, $max_registros);
 ?>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <script>
 	$(document).ready(function(){
@@ -63,118 +61,94 @@ $estoque  		 = $instance->listaCarros(NULL, 0, $max_registros);
 <!-- Whatsapp Button -->
 
 <!-- Cards dos filtros-->
-<p class="fs-1 text-center m-5" style="color:#FF5D5D">NOSSO ESTOQUE</p>
+<p class="fs-5 text-center mt-5 text-secondary" style="letter-spacing: 1px;">ÚLTIMOS VEICULOS ADICIONADOS &#128540;</p>
 
-<div class="container-lg pt-4 pb-4" id="estoque_container">
-	<?php
-		if(!empty($estoque)){
-	?>
-		<div class="row justify-content-center w-100" id="filtro_container">
-			<div class="col-md-3 mt-2 mb-1">
-				<select class="form-select" id="exampleFormControlSelect1">
-					<option selected>Marca</option>
-					<option>Renault</option>
-					<option>Chevrolet</option>
-					<option>Fiat</option>
-					<option>Volkswagem</option>
-				</select>
-			</div>
-			<div class="col-md-4 mt-2 mb-1">
-				<select class="form-select" id="exampleFormControlSelect1">
-					<option selected>Modelo</option>
-					<option>Renault</option>
-					<option>Chevrolet</option>
-					<option>Fiat</option>
-					<option>Volkswagem</option>
-				</select>
-			</div>
-			<div class="col-md-2 mt-2 mb-1">
-				<select class="form-select" id="exampleFormControlSelect1">
-					<option selected>Ano</option>
-					<option>2000</option>
-					<option>2001</option>
-					<option>2002</option>
-					<option>2003</option>
-				</select>
-			</div>
-			<div class="col-md-1 mt-2 mb-1">
-				<button class="btn" type="button"><i class="fas fa-search"></i></button>
-			</div>
-		</div>
+<div class="row m-0">
+    <div class="col p-0 m-0">
 
-		<div class="card-carros">
-			<?php
-				$i = 0;
-				foreach($estoque as $dados){
-					if($i == 0){
-						echo "<div class='row p-2 d-flex'>";
-					}
-					
-					$nome 		   = $dados['carros_nome'];
-					$imagem		   = json_decode($dados['carros_imagens']);
-					$imagem 	   = !empty($imagem) ? $imagem[0] : "default.jpg";
-					$quilometragem = $dados['carros_quilometragem'];
-					$transmissao   = $dados['carros_transmissao'] == 1 ? "Manual" : "Automático";
-					$motorizacao   = $dados['carros_motorizacao'];
-					$ano 		   = $dados['carros_ano'];
-					$marca		   = $dados['marcas_nome'];
+        <!--Carrousel-->
 
-					echo "
-					<div class='col-md-4 mt-4 w-25'>
-						<div class='card bg-light shadow-sm'>
-							<div class='card-body'>
-								<h5 class='card-title'>$marca $nome</h5>
-
-								<img src='images/carros/$imagem' class='img-fluid mb-2'>
-
-								<div class='table-responsive'>
-									<table class='table table-borderless text-center'>
-										<tbody>
-											<tr>
-												<td>$quilometragem Km</th>
-												<td>$transmissao</td>
-											</tr>
-											<tr>
-												<td>$motorizacao CV</td>
-												<td>$ano</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								<div class='text-center mb-2'>
-									<a href='#'><button class='btn-card rounded-pill'>Mais Detalhes</button></a>
-								</div>
-							</div>
-						</div>
-					</div>";
-					$i++;
-
-					if($i == 4){
-						echo "</div>";
-						$i = 0;
-					}
-				}
-				if($i > 0)
-				{
-					echo "</div>";
-				}
-			?>
-
-		</div>
-
-		<?php
-			if(!empty($estoque))
-				geraPaginacao($total_registros, $max_registros, TRUE);
-		}
-		else
-		{
-	?>
-		<p class="fs-6 text-center">Sem veículos no momento!</p>
-	<?php
-		}
-	?>
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href="./paginacarro.php"><img src="./images/Carros/img2.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img2.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img3.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img4.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img5.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img6.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img7.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img8.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <a href=""><img src="./images/Carros/img9.jpeg" alt="image" class="card-img-top"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<a href="./estoque.php" class="link-secondary" style="text-decoration: none;"><p class="fs-5 text-center mt-5 mb-5" style="letter-spacing: 1px;"> VER ESTOQUE COMPLETO &#129321;</p></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause: true,
+        loop:true,
+        margin:20,
+        nav:false,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+    </script>
 
 <?php
 require_once("footer.php")

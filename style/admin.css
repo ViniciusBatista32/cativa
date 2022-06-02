@@ -266,15 +266,6 @@ form .escrita{
     color: #787878;
 }
 
-
-.optionalsText{
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 1.125rem;
-    margin-left: 10rem;
-
-}
-
 /*estilizaÃ§Ã£o da parte de baixo da pagina adm*/
 
 .escrita-baixa {
@@ -333,9 +324,9 @@ html, body{
 }
 
 .perfilfoto{
-    width: 11vw;
+    width: 13vw;
     height: 21vh;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 .admin-side .inline-icon{

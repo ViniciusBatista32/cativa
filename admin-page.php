@@ -35,8 +35,11 @@
 
 <body>
     <div class="container-fluid h-100">
+
+    <!-- LEFT SIDE ADMIN PAGE -->
+
         <div class="row h-100">
-            <div class="col-sm-3  admin-side shadow-sm h-100">
+            <div class="col-sm-3 admin-side shadow-sm">
                 <img src="images/carros/img1.jpeg" class="perfilfoto mb-2 mt-5" alt="">
                 <ul class="m-0">
                     <li class="mt-5">
@@ -52,116 +55,11 @@
                     <a href="index.php"><i class="fas fa-sign-out-alt logout"></i></a>
                 </div>
             </div>
-            <div class="col h-100">
-
-                <p class="text-center estoque-escrita">CARROS EM ESTOQUE</p>
-
-                <div class="container w-100 h-75 p-5 p-0 shadow-sm listaCarros">
-
-                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
-
-                        <div class="col linha-carro-admin">
-                            <img src="images/carros/img1.jpeg" class="rounded">
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            KIA Cerato 1.6
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            AAA-0000
-                        </div>
-                        <div class="col text-end mx-auto my-1">
-                            <button class="editar" id="editarCarro" data-bs-toggle="modal"
-                                data-bs-target="#editarVeiculos"><i class="far fa-edit inline-icon"></i></button>
-                            <button class="excluir" id="exluirCarro" data-bs-toggle="modal"
-                                data-bs-target="#excluirCarro"><i class="fas fa-trash-alt"></i></button>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
-                        <div class="col linha-carro-admin">
-                            <img src="images/carros/img1.jpeg" class="rounded">
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            KIA Cerato 1.6
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            AAA-0000
-                        </div>
-                        <div class="col text-end mx-auto my-1">
-                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
-                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
-                        <div class="col linha-carro-admin">
-                            <img src="images/carros/img1.jpeg" class="rounded">
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            KIA Cerato 1.6
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            AAA-0000
-                        </div>
-                        <div class="col text-end mx-auto my-1">
-                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
-                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
-                        <div class="col linha-carro-admin">
-                            <img src="images/carros/img1.jpeg" class="rounded">
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            KIA Cerato 1.6
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            AAA-0000
-                        </div>
-                        <div class="col text-end mx-auto my-1">
-                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
-                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
-                        <div class="col linha-carro-admin">
-                            <img src="images/carros/img1.jpeg" class="rounded">
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            KIA Cerato 1.6
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            AAA-0000
-                        </div>
-                        <div class="col text-end mx-auto my-1">
-                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
-                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-3 rounded p-2 align-middle">
-                        <div class="col linha-carro-admin">
-                            <img src="images/carros/img1.jpeg" class="rounded">
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            KIA Cerato 1.6
-                        </div>
-                        <div class="col mx-auto my-2 text-center">
-                            AAA-0000
-                        </div>
-                        <div class="col text-end mx-auto my-1">
-                            <a class="editar" id="editarCarro"><i class="far fa-edit inline-icon"></i></a>
-                            <a class="excluir" id="exluirCarro"><i class="fas fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-
-                    <ul class="pagination mt-5 pagination-sm justify-content-center p-0">
-                        <li class=""><a class="page-link" href="">1</a></li>
-                        <li class=""><a class="page-link" href="">2</a></li>
-                        <li class=""><a class="page-link" href="">3</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
-        <!-- Modal Inserir Veículo -->
+    <!-- END LEFT SIDE ADMIN PAGE -->
+
+        <!-- MODAL INSERT VEHICLE -->
         <div class="modal fade" id="adicionarCarro" tabindex="-1" aria-labelledby="adicionarCarroLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -352,7 +250,7 @@
             </div>
         </div>
 
-        <!-- Modal Editar Veículo -->
+        <!-- MODAL EDIT VEHICLE -->
   
             <div class="modal fade" id="editarVeiculos" tabindex="-1" aria-labelledby="editarVeiculosLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
@@ -602,7 +500,7 @@
                 </div>
             </div>
 
-        <!-- Modal Excluir Veículo -->
+        <!-- MODAL EXCLUDE VEHICLE -->
         <div class="modal fade" id="excluirCarro" tabindex="-1" aria-labelledby="excluirCarroLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">

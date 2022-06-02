@@ -59,7 +59,7 @@
 
 		<!-- Copyright -->
 		<hr class="my-4">
-		<div class="row w-100 align-middle pb-4">
+		<div class="row w-100 align-middle pb-3">
 			<div class="col text-center">
 				2021 © Copyright Todos os direitos reservados - Cativa Veículos
 			</div>
