@@ -267,11 +267,11 @@ form .escrita{
 }
 
 
-.opcionais-text{
-    color: #787878;
+.optionalsText{
     font-family: Roboto;
     font-weight: 500;
     font-size: 1.125rem;
+    margin-left: 10rem;
 
 }
 

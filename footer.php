@@ -44,7 +44,7 @@
 				</div>
 
 				<div class="col">
-					<h5 class="title-footer p-0 m-0">
+					<h5 class="title-footer p-0 m-0 mt-5">
 						<div class="quadradofofinho"></div> Localização
 					</h5>
 					<div class="paragraph-footer">

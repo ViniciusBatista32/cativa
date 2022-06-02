@@ -36,3 +36,7 @@
 .carouselSize{
     height: 100px;
 }
+
+ul{
+	list-style-type: none;
+}

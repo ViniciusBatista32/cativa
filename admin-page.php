@@ -524,7 +524,7 @@
                                             </div>
                                         </div>
                                         <div class="col opcionais">
-                                            <h2 class="opcionais-text">Opcionais</h2>
+                                            <h2 class="optionalsText">Opcionais</h2>
                                             <div class="container border rounded p-2">
                                                 <div class="col d-flex justify-content-between">
                                                     <div class="form-check form-check-inline">

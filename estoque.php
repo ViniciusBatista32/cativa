@@ -54,8 +54,21 @@ require_once("header.php")
 <!-- STOCK -->
 
 <div id="stock-container" class="container shadow p-0">
+
+<div class="col-md-3 mt-5 p-2">
+            <div class="card bg-white shadow-sm">
+                <img src="images/Carros/img1.jpeg" class="card-img-top" alt="Voyage 2012">
+                    <div class="card-body p-0">
+                        <h5 class="card-title p-2">VOYAGE 2012</h5>
+                        <p class="cardInfo mt-3 text-danger">R$38.900,00</p>
+                        <p class="cardInfo mt-3 mb-3">KM: 120.000</p>
+                        <a href="" class="seeMore m-0 p-2">VER MAIS</a>
+                    </div>
+            </div>
+		</div>
+
 		<div class="col-md-3 mt-5 p-2">
-        <div class="card bg-white shadow-sm">
+			<div class="card bg-white shadow-sm">
             <img src="images/Carros/img1.jpeg" class="card-img-top" alt="Voyage 2012">
 				<div class="card-body p-0">
                     <h5 class="card-title p-2">VOYAGE 2012</h5>
@@ -78,7 +91,31 @@ require_once("header.php")
 			</div>
 		</div>
 
-		<div class="col-md-3 mt-5 p-2">
+        <div class="col-md-3 p-2">
+            <div class="card bg-white shadow-sm">
+                <img src="images/Carros/img1.jpeg" class="card-img-top" alt="Voyage 2012">
+                    <div class="card-body p-0">
+                        <h5 class="card-title p-2">VOYAGE 2012</h5>
+                        <p class="cardInfo mt-3 text-danger">R$38.900,00</p>
+                        <p class="cardInfo mt-3 mb-3">KM: 120.000</p>
+                        <a href="" class="seeMore m-0 p-2">VER MAIS</a>
+                    </div>
+            </div>
+		</div>
+
+		<div class="col-md-3 p-2">
+			<div class="card bg-white shadow-sm">
+            <img src="images/Carros/img1.jpeg" class="card-img-top" alt="Voyage 2012">
+				<div class="card-body p-0">
+                    <h5 class="card-title p-2">VOYAGE 2012</h5>
+                    <p class="cardInfo mt-3 text-danger">R$38.900,00</p>
+                    <p class="cardInfo mt-3 mb-3">KM: 120.000</p>
+                    <a href="" class="seeMore m-0 p-2">VER MAIS</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 p-2">
 			<div class="card bg-white shadow-sm">
             <img src="images/Carros/img1.jpeg" class="card-img-top" alt="Voyage 2012">
 				<div class="card-body p-0">

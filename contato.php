@@ -15,7 +15,7 @@ require_once("header.php")
 
             <!-- Whatsapp -->
 
-            <div class="row whatsapp-place">
+            <div class="row whatsapp-place p-4 m-0">
                 <div class="col text-center">
                     <i class="fab fa-whatsapp icone-whatsapp"></i>
                 </div>
@@ -23,7 +23,7 @@ require_once("header.php")
                     <h5 class="title-footer">
                         <div class="quadradofofinho"></div> Whatsapp
                     </h5>
-                    <p class="paragraph-footer mb-4">Nos envie uma mensagem pelo whatsapp!</p>
+                    <p class="paragraph-footer mt-2 mb-4">Nos envie uma mensagem pelo whatsapp!</p>
                 </div>
                 <div class="col">
                     <h4 class="">(11) 98834-0261</h4>
@@ -32,7 +32,7 @@ require_once("header.php")
             </div>
 
             <!-- Telefone -->
-            <div class="row telefone-place mt-5">
+            <div class="row telefone-place p-4 mt-5 m-0">
                 <div class="col text-center">
                     <i class="fas fa-phone-alt icone-telefone"></i>
                 </div>
@@ -40,7 +40,7 @@ require_once("header.php")
                     <h5 class="title-footer">
                         <div class="quadradofofinho"></div> Telefone Fixo
                     </h5>
-                    <p class="paragraph-footer mb-4">Ligue agora mesmo e tire as suas dúvidas!</p>
+                    <p class="paragraph-footer mt-2 mb-4">Ligue agora mesmo e tire as suas dúvidas!</p>
                 </div>
                 <div class="col">
                     <h4 class="">(11) 4587-6813</h4>

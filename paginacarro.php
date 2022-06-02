@@ -4,13 +4,15 @@ require_once("functions/functions_carros.php");
 ?>
 
 <link rel="stylesheet" href="./style/paginaCarro.css">
+<link rel="stylesheet" href="style/admin.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<div class="row">
-    <div class="col-md-5 w-100">
+<div class="row p-0 m-0">
+    <div class="col p-0 m-0">
+
         <!--Carrousel-->
 
         <div class="container-fluid">
@@ -64,102 +66,97 @@ require_once("functions/functions_carros.php");
                 </div>
             </div>
         </div>
-        <!-- End Carrousel-->
+</div>
+<!-- End Carrousel-->
 
+<!-- Vehicle caracteristics -->
+<div class="row m-0">
+    <div class="container">
+        <h3 class="mt-4 d-flex justify-content-center">Voyage 2012</h3>
+        <h4 class="d-flex justify-content-center text-danger mt-3">R$38.900,00</h4>
 
-        <!-- Vehicle caracteristics -->
-        <div class="container">
-
-            <h3 class="mt-4 d-flex justify-content-center">Voyage 2012</h3>
-                <h4 class="d-flex justify-content-center text-danger">R$38.900,00</h4>
-         <div class="row mt-4">
-                <div class="col p-0 m-0">
-                    <ul class="list-group-flush">
-                        <li class="list-group-item">Marca:</li>
-                        <li class="list-group-item">Modelo:</li>
-                        <li class="list-group-item">Ano do Modelo</li>
-                        <li class="list-group-item">Final Placa:</li>
-                    </ul>
-                </div>
-                <div class="col p-0 m-0">
-                    <ul class="list-group-flush">
-                        <li class="list-group-item">KM:</li>
-                        <li class="list-group-item">Cor:</li>
-                        <li class="list-group-item">Motorização:</li>
-                        <li class="list-group-item">Único dono:</li>
-                    </ul>
-                </div>
+        <div class="row mt-5">
+            <div class="col p-0 m-0">
+                <ul class="list-group-flush">
+                    <li class="list-group-item">Marca:</li>
+                    <li class="list-group-item">Modelo:</li>
+                    <li class="list-group-item">Ano do Modelo</li>
+                    <li class="list-group-item">Final Placa:</li>
+                </ul>
+            </div>
+            <div class="col p-0 m-0">
+                <ul class="list-group-flush">
+                    <li class="list-group-item">KM:</li>
+                    <li class="list-group-item">Cor:</li>
+                    <li class="list-group-item">Motorização:</li>
+                    <li class="list-group-item">Único dono:</li>
+                </ul>
             </div>
         </div>
-        <!-- End Vehicle caracteristics-->
-
     </div>
+</div>
+<!-- End Vehicle caracteristics-->
 
 
     <!-- Vehicle optionals -->
 
-    <div class="m-5 mb-5 p-0 rounded mt-4">
-        <h2 class="mb-4">Opcionais do veículo</h2>
-            <div class="row mb-5">
+        <div class="row m-0 p-4 mb-5">
 
-                <div class="col">
-                        <ul class="list-group">
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Ar-condicionado
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Alarme
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Direção hidráulica
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="col m-0 p-0">
-                        <ul class="list-group">
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Air-bags
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Freio ABS
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Vidros-elétricos
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="col m-0 p-0">
-                        <ul class="list-group">
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Câmera de ré
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Bancos de couro
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Sistema de som
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="col m-0 p-0">
-                        <ul class="list-group">
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Computador de bordo
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Teto solar
-                            </li>
-                            <li class="m-1">
-                                <input class="form-check-input me-1" type="checkbox">Rodas de liga leve
-                            </li>
-                        </ul>
-                </div>
-                
+        <h2 class="optionalsText mt-4 mb-5 d-flex justify-content-center text-danger">Opcionais</h2>
+            <div class="col opcionais">
+                <ul class="list-group">
+                    <li class="">
+                        <input class="form-check-input me-1" type="checkbox">Ar-condicionado
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Alarme
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Direção hidráulica
+                    </li>
+                </ul>
             </div>
-    </div>
+            <div class="col m-0 p-0">
+                <ul class="list-group">
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Air-bags
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Freio ABS
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Vidros-elétricos
+                    </li>
+                </ul>
+            </div>
+            <div class="col m-0 p-0">
+                <ul class="list-group">
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Câmera de ré
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Bancos de couro
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Sistema de som
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col m-0 p-0">
+                <ul>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Computador de bordo
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Teto solar
+                    </li>
+                    <li class="mt-2">
+                        <input class="form-check-input me-1" type="checkbox">Rodas de liga leve
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     <!-- End Vehicle Optionals -->
 
@@ -189,7 +186,6 @@ require_once("functions/functions_carros.php");
 })
     </script>
 
-
-    <?php
-    require_once("footer.php")
-    ?>
+<?php
+require_once("footer.php")
+?>
