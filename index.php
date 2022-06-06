@@ -68,51 +68,51 @@ require_once("functions/functions_carros.php");
 
         <!--Carrousel-->
 
-        <div class="container-fluid mb-5">
+        <div class="container-fluid mb-3">
             <div class="row">
                 <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="card border-0 shadow">
+                    <div class="item shadow">
+                        <div class="card">
                             <a href="./paginacarro.php"><img src="./images/Carros/img2.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img2.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img3.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img4.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img5.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img6.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img7.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img8.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0 shadow">
+                        <div class="card border shadow">
                             <a href=""><img src="./images/Carros/img9.jpeg" alt="image" class="card-img-top"></a>
                         </div>
                     </div>
@@ -144,7 +144,7 @@ require_once("functions/functions_carros.php");
             items:2
         },
         1000:{
-            items:3
+            items:4
         }
     }
 })

@@ -3,6 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+/* configuracoes gerais*/
+
+html,
+body{
+  overflow-y:scroll!important;
+}
+
 /* Configurações do menu */
 
 .nav img {
