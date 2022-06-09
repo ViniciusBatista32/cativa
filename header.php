@@ -11,6 +11,7 @@ require_once("functions/functions_ferramentas.php");
 
 <head>
 	<meta charset="UTF-8">
+    <link rel="icon" href="./images/Logo-Cativa.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cativa Veículos</title>
@@ -39,7 +40,7 @@ require_once("functions/functions_ferramentas.php");
 </head>
 
 <body>
-	<nav class="navbar m-0 p-0 w-100 fixed-top">
+	<nav class="navbar m-0 p-0 w-100 shadow">
 		<div class="container">
 			<ul class="nav navbar-nav pull-sm-left">
 				<li class="nav-item p-0 m-0">

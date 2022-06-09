@@ -100,7 +100,7 @@ require_once("functions/functions_carros.php");
 
     <!-- Vehicle optionals -->
 
-    <h2 class="mt-5 mb-2 d-flex justify-content-center text-danger">Opcionais</h2>
+    <p class="mt-5 mb-2 d-flex justify-content-center fs-4 text-danger" style="letter-spacing: 1px;">OPCIONAIS</p>
 
         <div class="row m-0 p-4">
             <div class="col opcionais">
@@ -159,7 +159,7 @@ require_once("functions/functions_carros.php");
         </div>
 
     
-        <a class="link-danger mb-5" href="./contato.php"> <h2 class="mt-5 mb-5 d-flex justify-content-center">Entre em contato conosco!</h2></a>
+        <a href="./estoque.php" class="link-secondary mb-5" style="text-decoration: none;"><p class="fs-5 text-center mt-5 mb-5" style="letter-spacing: 1px;"> ENTRE EM CONTATO!  &#128222;</p></a>
 
 
     <!-- End Vehicle Optionals -->

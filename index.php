@@ -36,14 +36,11 @@ require_once("functions/functions_carros.php");
 <!-- Carrossel -->
 <div id="carrosselprincipal" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-inner shadow-sm">
-		<div class="carousel-item active">
-			<img src="images/carrossel-images/Financiamento.png" class="d-block h-auto w-100 mx-auto" alt="primeira-imagem">
+		<div class="carousel-item active" style="background-image:url(./images/carrossel-images/Financiamento.png); background-position: center; background-size:cover;">
 		</div>
-		<div class="carousel-item">
-			<img src="images/carrossel-images/Garantia.png" class="d-block h-auto w-100 mx-auto" alt="segunda-imagem">
+		<div class="carousel-item" style="background-image:url(./images/carrossel-images/Marketing.png); background-position: center; background-size:cover;">
 		</div>
-		<div class="carousel-item">
-			<img src="images/carrossel-images/Marketing.png" class="d-block h-auto w-100 mx-auto" alt="terceira-imagem">
+		<div class="carousel-item" style="background-image:url(./images/carrossel-images/Garantia.png); background-position: center; background-size:cover;">
 		</div>
 	</div>
 	<button class="carousel-control-prev" type="button" data-bs-target="#carrosselprincipal" data-bs-slide="prev">
