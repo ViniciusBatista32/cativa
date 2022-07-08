@@ -1,8 +1,6 @@
 <?php
-require_once "functions/conexao.php";
-require_once "config.php";
-require_once("functions/conexao.php");
 require_once("config.php");
+require_once("functions/conexao.php");
 require_once("functions/functions_ferramentas.php");
 ?>
 
@@ -10,11 +8,12 @@ require_once("functions/functions_ferramentas.php");
 <html lang="pt-br">
 
 <head>
+	<link rel="icon" href="images/Logo-Cativa.png">
 	<meta charset="UTF-8">
-    <link rel="icon" href="./images/Logo-Cativa.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cativa Veículos</title>
+
 	<!-- jQuery Core -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js"
 		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -32,60 +31,45 @@ require_once("functions/functions_ferramentas.php");
 	<!-- FA Icons -->
 	<script src="https://kit.fontawesome.com/d6a1c148cd.js" crossorigin="anonymous"></script>
 	<!-- Master CSS -->
-	<link rel="stylesheet" href="style/master.css">
-	<!-- Owl carrossel -->
-	<link rel="stylesheet" href="style/owl.carousel.min.css">
+	<link rel="stylesheet" href="style/master_claro.css">
 	<!-- Outros CSS-->
-	<link rel="stylesheet" href="style/style-financing.css">
+	<link rel="stylesheet" href="style/finaciamento.css">
 </head>
 
 <body>
-	<nav class="navbar m-0 p-0 w-100 shadow">
-		<div class="container">
-			<ul class="nav navbar-nav pull-sm-left">
-				<li class="nav-item p-0 m-0">
-					<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-					<i class="fas fa-bars inline-icon"></i>Menu</a>
-				</li>
-			</ul>
-
-			<a href="index.php">
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a href="index">
 				<img src="images/logo-cativa.png" height="50" style="background-origin: border-box;">
 			</a>
-		</div>
-	</nav>
-	
-	<!-- Sidebar (OffCanvas) -->
-	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-		<div class="offcanvas-header shadow-sm p-1 bg-light">
-			<button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
-					class="fas fa-bars inline-icon"></i>Menu</h5>
-		</div>
-		<div class="offcanvas-body">
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">
-					<a class="menu-itens" href="estoque.php"> <i class="fas fa-car inline-icon"></i> Estoque </a>
-				</li>
-				<li class="list-group-item">
-					<a class="menu-itens" href="financiamento.php"> <i class="fas fa-coins inline-icon"></i>
-						Financiamento </a>
-				</li>
-				<li class="list-group-item">
-					<a class="menu-itens" href="contato.php"> <i class="fas fa-phone-alt inline-icon"></i> Contato </a>
-				</li>
-			</ul>
-			<div class="container-fluid">
-				<div class="row justify-content-md-center m-6">
-					<div class="col">
-						<a href="https://facebook.com.br/cativaveiculosoficial"><i class="fab fa-facebook"></i></a>
-					</div>
-					<div class="col">
-						<a href="https://api.whatsapp.com/send?phone=5511983340201"><i class="fab fa-whatsapp"></i></a>
-					</div>
-					<div class="col">
-						<a href="https://www.instagram.com/cativaveiculos/"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+					<li class="nav-item">
+						<a class="menu-itens nav-link active" href="estoque">
+							<i class="fas fa-car inline-icon"></i>
+							Estoque
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="menu-itens nav-link active" href="financiamento">
+							<i class="fas fa-coins inline-icon"></i>
+							Financiamento
+						</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="menu-itens nav-link active" href="contato">
+							<i class="fas fa-phone-alt inline-icon"></i>
+							Contato
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>

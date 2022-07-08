@@ -2,7 +2,7 @@
 require_once("header.php")
 ?>
 
-<link rel="stylesheet" href="./style/stock.css">
+<link rel="stylesheet" href="style/estoque.css">
 
 <!--whatsapp button-->
 
@@ -62,7 +62,7 @@ require_once("header.php")
                         <h5 class="card-title p-2">VOYAGE 2012</h5>
                         <p class="cardInfo mt-3 text-danger">R$38.900,00</p>
                         <p class="cardInfo mt-3 mb-3">KM: 120.000</p>
-                        <a href="./paginacarro.php" class="seeMore m-0 p-2">VER MAIS</a>
+                        <a href="carro" class="seeMore m-0 p-2">VER MAIS</a>
                     </div>
             </div>
         </div>

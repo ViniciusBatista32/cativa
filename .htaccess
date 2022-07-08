@@ -1,1 +1,19 @@
-Header set Access-Control-Allow-Origin "*"
+# Protect files.
+#<FilesMatch "(\.(xml|html|cache))$">
+#	Order allow,deny
+#</FilesMatch>
+
+# Disable directory listings.
+#Options -Indexes
+
+# Follow symbolic links.
+#Options +FollowSymLinks
+
+# Error document.
+ErrorDocument 404 http://%{HTTP_HOST}/cativa/erros/404.php
+
+RewriteEngine On
+RewriteRule ^([a-zA-Z]+)$ /$1.php [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /pages/errors/404.php [L]
